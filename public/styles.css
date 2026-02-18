@@ -1,0 +1,146 @@
+:root {
+  color-scheme: light;
+  --bg: #0f172a;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, #e2e8f0 0%, #f8fafc 35%, #f8fafc 100%);
+  color: var(--text);
+}
+
+.hero {
+  background: var(--bg);
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  background: #334155;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  margin: 0 0 0.75rem;
+}
+
+.stack-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: #bfdbfe;
+}
+
+main {
+  max-width: 980px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 20px rgb(15 23 42 / 0.06);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.calc-form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+.feedback {
+  min-height: 1.4rem;
+  margin: 0.6rem 0;
+  color: var(--muted);
+}
+
+.result-label {
+  font-size: 1.1rem;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.history-list li {
+  border: 1px solid var(--border);
+  padding: 0.6rem;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills span {
+  background: #dbeafe;
+  color: #1e3a8a;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1rem;
+  font-size: 0.9rem;
+}

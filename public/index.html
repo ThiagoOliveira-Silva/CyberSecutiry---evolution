@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Fullstack | Simulação de Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="tag">Projeto Fullstack</p>
+        <h1>Portfólio: Simulação de Calculadora</h1>
+        <p>
+          Demonstração completa de front-end e back-end com validação de operações,
+          histórico e API REST.
+        </p>
+      </div>
+      <ul class="stack-list">
+        <li>Node.js (API HTTP nativa)</li>
+        <li>HTML + CSS + JavaScript</li>
+        <li>Integração via Fetch API</li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="card" aria-labelledby="sobre">
+        <h2 id="sobre">Sobre o Projeto</h2>
+        <p>
+          Este portfólio simula uma aplicação real para vaga de desenvolvimento fullstack.
+          O back-end expõe endpoints para cálculo e histórico. O front-end oferece interface
+          acessível e responsiva para interação em tempo real.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card calculator-card" aria-labelledby="calc-title">
+          <h2 id="calc-title">Calculadora</h2>
+          <form id="calculator-form" class="calc-form">
+            <label>
+              Número A
+              <input type="number" step="any" name="a" required />
+            </label>
+            <label>
+              Operação
+              <select name="operator" required>
+                <option value="+">Soma (+)</option>
+                <option value="-">Subtração (-)</option>
+                <option value="*">Multiplicação (*)</option>
+                <option value="/">Divisão (/)</option>
+              </select>
+            </label>
+            <label>
+              Número B
+              <input type="number" step="any" name="b" required />
+            </label>
+            <button type="submit">Calcular</button>
+          </form>
+          <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+          <p class="result-label">
+            Resultado: <strong id="result">--</strong>
+          </p>
+        </article>
+
+        <article class="card" aria-labelledby="hist-title">
+          <h2 id="hist-title">Histórico (últimos 10)</h2>
+          <ul id="history" class="history-list"></ul>
+        </article>
+      </section>
+
+      <section class="card" aria-labelledby="skills-title">
+        <h2 id="skills-title">Habilidades Demonstradas</h2>
+        <div class="skills">
+          <span>REST API</span>
+          <span>Validação no servidor</span>
+          <span>UX responsiva</span>
+          <span>Arquitetura cliente-servidor</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido como projeto de portfólio fullstack para simulação de calculadora.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
